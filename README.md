@@ -44,7 +44,7 @@ curl -X 'POST' \
 }
 
 ## Balance Enquiry
-For this method you have to append the token generated via login within the header of your request \
+For this method you have to append the token generated via login within the header of your request 
 
 ### Sample Request
 curl -X 'GET' \
@@ -67,4 +67,4 @@ retval is an output parameter within the stored procedure, and is default if res
   "retval": "1",\
   "retmessage": "Account Has No Valid Customer Record",\
   "enquiry": null\
-}\
+}
