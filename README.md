@@ -16,7 +16,7 @@ curl -X 'POST' \
   "email": "*********",
   "balance": 500,
   "password": "*********"
-}'
+}'\
 Sample Response 
 {
   "responseCode": "00",
@@ -34,7 +34,7 @@ curl -X 'POST' \
   -d '{
   "userName": "Opiah1",
   "password": ""*********""
-}'
+}'\
 Sample Response
 {
   "token": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTUxMiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiT3BpYWgxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiZGF2aWQub3BpYWhAaW5mb3NpZ2h0b25saW5lLmNvbSIsImV4cCI6MTY4MDc5MDM4MX0.udHFOg8vED4bgDuriAEm6c7O_oZN_eFa15kZ9dnviZWV6MGwpnDHEIys9bTJQUYq0_zZrmm2J2wgYw_lppKJzg",
@@ -47,7 +47,7 @@ Sample Request
 curl -X 'GET' \
   'https://localhost:7254/api/UserOperations/BalanceEnquiry?accountnumber=5555332634' \
   -H 'accept: application/json' \
-  -H 'Authorization: bearer eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTUxMiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiT3BpYWgxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiZGF2aWQub3BpYWhAaW5mb3NpZ2h0b25saW5lLmNvbSIsImV4cCI6MTY4MDc5MDM4MX0.udHFOg8vED4bgDuriAEm6c7O_oZN_eFa15kZ9dnviZWV6MGwpnDHEIys9bTJQUYq0_zZrmm2J2wgYw_lppKJzg'
+  -H 'Authorization: bearer eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTUxMiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiT3BpYWgxIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiZGF2aWQub3BpYWhAaW5mb3NpZ2h0b25saW5lLmNvbSIsImV4cCI6MTY4MDc5MDM4MX0.udHFOg8vED4bgDuriAEm6c7O_oZN_eFa15kZ9dnviZWV6MGwpnDHEIys9bTJQUYq0_zZrmm2J2wgYw_lppKJzg'\
   Sample Response
   {
   "retval": "0",
@@ -57,8 +57,8 @@ curl -X 'GET' \
     "usableBalance": 500,
     "accountNumber": "5555332634"
   }
-}
-retval is an output parameter within the stored procedure, and is default if result is performed and 1 if otherwise e.g
+}\
+retval is an output parameter within the stored procedure, and is default if result is performed and 1 if otherwise e.g\
 {
   "retval": "1",
   "retmessage": "Account Has No Valid Customer Record",
