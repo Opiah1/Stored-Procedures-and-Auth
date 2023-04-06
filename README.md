@@ -41,7 +41,7 @@ Sample Response
   "refreshToken": null
 }
 
-#Balance Enquiry
+# Balance Enquiry
 For this method you have to append the token generated via login within the header of your request 
 Sample Request
 curl -X 'GET' \
